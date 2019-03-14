@@ -1,0 +1,19 @@
+<!-- <p>
+    {{school1}}
+    <br>
+    {{school2}}
+    <br>
+    {{school3}}
+  </p> -->
+  
+  <hr>
+  <div>
+    <h5>Education: </h5>
+    <ul>
+      <li *ngFor="let e of education">
+        <span [ngClass]="schoolClass">{{e.school}}</span> {{e.degree}} {{e.year}}
+      </li>
+      <!-- <li>{{education[0].school}} {{education[0].degree}} {{education[0].year}}</li>
+      <li>{{education[1].school}} {{education[1].degree}} {{education[1].year}}</li> -->
+    </ul>
+  </div>
